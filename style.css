@@ -1,0 +1,25 @@
+body {
+    font: arial
+}
+
+.centered {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+
+.left {
+    flex: 40%;
+}
+
+.right {
+    flex: 75%;
+
+}
+
+.frame {
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
