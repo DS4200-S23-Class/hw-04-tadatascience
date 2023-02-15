@@ -37,3 +37,14 @@ body {
     stroke: green;
     stroke-width: 10px;
 }
+
+.coordinate-display {
+    border: black 2px solid;
+    padding: 12px;
+    margin-bottom: 2rem;
+}
+
+.coordinate-selector {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
