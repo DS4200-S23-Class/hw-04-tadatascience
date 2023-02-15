@@ -1,41 +1,35 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset=utf-8 />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
     <script src="main.js"></script>
     <title>hw - 04</title>
-</head>
+  </head>
 
-
-<body>
-
+  <body>
     <!-- header 1 -->
     <h1 class="centered">hw-04: Event Handling</h1>
 
     <!-- columns -->
     <div class="row">
+      <!-- left column -->
+      <div class="left">
+        <svg id="frame" class="frame" width="1000" height="1000">
+          <circle cx="100" cy="800" r="25" class="point" onClick="onPointClick(this)" />
+          <circle cx="200" cy="600" r="25" class="point" onClick="onPointClick(this)" />
+          <circle cx="600" cy="800" r="25" class="point" onClick="onPointClick(this)" />
+          <circle cx="900" cy="100" r="25" class="point" onClick="onPointClick(this)" />
+        </svg>
+      </div>
 
-        <!-- left column -->
-        <div class="left">
-            <p>hey curtis</p>
-            <svg class="frame" width="1000" height="1000">
-                <circle cx="100" cy="800" fill="purple" r="25"></circle>
-                <circle cx="200" cy="600" fill="purple" r="25"></circle>
-                <circle cx="600" cy="800" fill="purple" r="25"></circle>
-                <circle cx="900" cy="100" fill="purple" r="25"></circle>
-
-            </svg>
+      <!-- right column -->
+      <div class="right">
+        <div>
+          Coordinates:
+          <span id="coordinates" />
         </div>
-
-        <!-- right column -->
-        <div class="right">
-            <p>hey nicole</p>
-        </div>
-
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
