@@ -11,12 +11,13 @@ function onPointClick(circleElement) {
   const gridCoordinates = getGridCoordinates(circleElement, frameHeight, 100);
   coordinateDisplay.innerHTML = `(${gridCoordinates.xCoordinate}, ${gridCoordinates.yCoordinate})`;
 
-  // add border if it is absent, remove if it exists
+  // if border already exists remove it
   if (circleElement.classList.contains('border')) {
     circleElement.classList.remove('border');
-  } else {
-    circleElement.classList.add('border');
+    return;
   }
+
+  circleElement.classList.add('border');
 }
 
 // translate SVG coordinates into grid coordinates
